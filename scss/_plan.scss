@@ -1,0 +1,110 @@
+.mPlan{
+  margin-top: $gutter-xxl;
+  $father: &;
+
+  &__header{
+    margin-bottom: $gutter-sm;
+    @include flex-center;
+  }
+
+  &__type,
+  &__price{
+    @include flex-center(column); 
+    border-bottom: 1px solid $colorDefaultLight;
+    padding: $gutter-md;
+  }
+
+  &__description{
+    height: $gutter-xxl;
+    margin-bottom: $gutter-sm-md;
+  }
+
+  &__list{
+    min-height: 250px;
+    list-style-type: none;
+    margin: 0;
+    padding-top: $gutter-md;
+    padding-bottom: $gutter-md;
+  }
+
+  &__item{
+    padding: 8px 0;
+    min-height: 50px;
+    min-height: 0;
+  }
+
+
+  &__itemContainer{
+    padding: 0 6px;;
+  }
+
+  &__system{
+    width: 100%;
+    display: inline-block;
+    @extend .borderNeutralRounded;
+    border-color: $colorDefaultLight !important;
+    
+    &--state{
+      border-width: 2px;
+      &-primary{
+          border-color: $colorPrimary !important;
+         &::before{
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 64px 64px 0 0;
+          border-color: $colorPrimary transparent transparent transparent !important;
+          position: absolute;
+          left: 2px;
+          content: "";
+        }
+      }
+    }
+  }
+
+  
+  &__stampLabel{
+    transform: rotate(-45deg);
+    position: absolute;
+    color: $colorNeutral;
+    margin-top: $gutter-sm-md;
+    left: 1px;
+    font-size: 1.2rem;
+  }
+
+  &__installments{
+    @include flex-center(column); 
+    align-items: flex-end;
+  }
+
+  &__promotion{
+    font-family: fontName('Bold');
+    font-weight: bold;
+    @include flex-center; 
+  }
+  &__name{
+    font-size: 2.8rem;
+    margin-top: 12px;
+    margin-bottom: $gutter-sm;
+  }
+
+  &__pricePromotional{
+    font-size: 4rem;
+    margin-left: $gutter-xs;
+  }
+
+  &__titleHeader{
+    margin-left: $gutter-xs;
+    font-size: 2rem;
+  }
+
+  &__footer{
+    padding-bottom: $gutter-sm-md;
+     @include flex-center(column); 
+  }
+
+  &__btn{
+    width: 100%;
+    font-size: 1.8rem;
+  }
+}
