@@ -80,7 +80,7 @@
     <footer class="mPlan__footer col-md-12">
       <?php 
       foreach ($plan['actions'] as $action) { ?>
-        <a href="<?= $plan['url']?>" class="btn mPlan__btn <?= $action['class']?>" target="<?= $action['target']?>"><?= $action['label']?></a>  
+        <a href="<?= $action['url']?>" class="btn mPlan__btn <?= $action['class']?>" target="<?= $action['target']?>"><?= $action['label']?></a>  
      <?php }
       ?>
     </footer>
