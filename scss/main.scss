@@ -7,3 +7,65 @@
 
 // COMPONENETS
 @import 'plan';
+
+
+.gBtn{
+  font-family: fontName('Bold');
+  background-image: none !important;
+  box-shadow: 0 0 0 !important;
+  color: $colorNeutral;
+  background-color: $colorDefault;
+
+  &:hover{
+   color: $colorNeutral !important;
+   background-color: $colorDefaultLight;
+  }
+
+  
+  &--accent{
+    background-color: $colorAccent;
+    border-color: $colorAccent;
+
+    &:hover{
+      background-color: $colorAccentLight;
+      border-color: $colorAccentLight;
+    }
+  }
+
+   &--primary{
+    background-color: $colorPrimary;
+    &:hover{
+      background-color: $colorPrimaryLight;
+    } 
+  }
+  &--danger{
+    background-color: $colorDanger;
+  }
+
+
+}
+.gAccent{
+  font-family: fontName('Bold');
+}
+
+.gChunk{
+  margin-top: $gutter-md;
+  margin-bottom: $gutter-md;
+  &-lg{
+    margin-top: $gutter-lg;
+    margin-bottom: $gutter-lg;
+  }
+  &-xl{
+    margin-top: $gutter-xl;
+    margin-bottom: $gutter-xl;
+  }
+}
+
+.gColor{
+  &--primary{
+    color: $colorPrimary;
+  }
+  &--danger{
+    color: $colorDanger;
+  }
+}

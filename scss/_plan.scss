@@ -1,6 +1,7 @@
 .mPlan{
-  margin-top: $gutter-xxl;
   $father: &;
+  margin-top: $gutter-xxl;
+  color: $colorDefaultDark;
 
   &__header{
     margin-bottom: $gutter-sm;
@@ -15,6 +16,7 @@
   }
 
   &__description{
+    font-family: fontName('Light');
     height: $gutter-xxl;
     margin-bottom: $gutter-sm-md;
   }
@@ -31,6 +33,7 @@
     padding: 8px 0;
     min-height: 50px;
     min-height: 0;
+    font-family: fontName('Light');
   }
 
 
@@ -55,7 +58,6 @@
           border-width: 64px 64px 0 0;
           border-color: $colorPrimary transparent transparent transparent !important;
           position: absolute;
-          left: 2px;
           content: "";
         }
       }
@@ -68,7 +70,6 @@
     position: absolute;
     color: $colorNeutral;
     margin-top: $gutter-sm-md;
-    left: 1px;
     font-size: 1.2rem;
   }
 
@@ -81,8 +82,10 @@
     font-family: fontName('Bold');
     font-weight: bold;
     @include flex-center; 
+    align-items: flex-start;
   }
   &__name{
+    font-family: fontName('Light');
     font-size: 2.8rem;
     margin-top: 12px;
     margin-bottom: $gutter-sm;
@@ -93,6 +96,16 @@
     margin-left: $gutter-xs;
   }
 
+  &__monthly{
+    line-height: 26px;
+    padding: 12px 0 0 0;
+    @include flex-center(column); 
+    align-items: flex-end;
+  }
+
+  &__phrase{
+    font-family: fontName('Light');
+  }
   &__titleHeader{
     margin-left: $gutter-xs;
     font-size: 2rem;
@@ -106,5 +119,10 @@
   &__btn{
     width: 100%;
     font-size: 1.8rem;
+    color: $colorNeutral;
+    margin: 5px 0;
+    &:hover{
+      color: $colorNeutral;
+    }
   }
 }

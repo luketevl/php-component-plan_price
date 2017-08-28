@@ -20,30 +20,33 @@
 
         $pageDiamante = '#';
 
+        $constPorcentagemDesconto = 10;
+
       $plans = array(
         
           array(
-            'icon_title'            => 'images/icons/icon_pc.png',
-            'label_title'           => 'Desktop',
-            'icon'                  => 'images/icons/bronze.png',
+            'icon_title'            => '',
+            'label_title'           => '',
+            'icon'                  => 'images/icons/icon1.png',
             'title'                 => 'Bronze',
             'description'           => 'Versão com recursos básicos para gestão de sua empresa',
             'alt'                   => 'Bronze',
-            'price'                 => 399,
-            'price_promotional'     => 199,
+            'monthly'               => true,
+            'price'                 => 129,
+            'price_promotional'     => 29,
             'qty_installments'      => 10,
             'porcent_discount'      => $constPorcentagemDesconto,
              'actions'               => array(
               array(
                 'label'   => 'Test',
                 'link'    => '#',
-                'class'   => '',
+                'class'   => 'gBtn--primary',
                 'target'  => '__blank',
               ),
               array(
                 'label'   => 'Buy',
                 'link'    => '#',
-                'class'   => '',
+                'class'   => 'gBtn--primary',
                 'target'  => '__blank',
               ),
 
@@ -60,12 +63,13 @@
           ),
 
             array(
-            'icon_title'            => 'images/icons/icon_pc.png',
-            'label_title'           => 'Desktop',
-            'icon'                  => 'images/icons/prata.png',
+            'icon_title'            => '',
+            'label_title'           => '',
+            'icon'                  => 'images/icons/icon2.png',
             'title'                 => 'Prata',
             'description'           => 'Versão com recursos medianos para gestão de sua empresa',
             'alt'                   => 'Prata',
+            'monthly'               => true,
             'price'                 => 599,
             'price_promotional'     => 499,
             'qty_installments'      => 10,
@@ -74,13 +78,13 @@
               array(
                 'label'   => 'Test',
                 'link'    => '#',
-                'class'   => '',
+                'class'   => 'gBtn--primary',
                 'target'  => '__blank',
               ),
               array(
                 'label'   => 'Buy',
                 'link'    => '#',
-                'class'   => '',
+                'class'   => 'gBtn--primary',
                 'target'  => '__blank',
               ),
 
@@ -96,12 +100,13 @@
           ),
 
           array(
-            'icon_title'            => 'images/icons/icon_data.png',
-            'label_title'           => 'Online',
-            'icon'                  => 'images/icons/ouro.png',
+            'icon_title'            => '',
+            'label_title'           => '',
+            'icon'                  => 'images/icons/icon3.png',
             'title'                 => 'Ouro',
             'description'           => 'Versão com recursos altos para gestão de sua empresa',
             'alt'                   => 'Ouro',
+            'monthly'               => true,
             'price'                 => 1999,
             'price_promotional'     => 1599,
             'qty_installments'      => 10,
@@ -110,13 +115,13 @@
               array(
                 'label'   => 'Test',
                 'link'    => '#',
-                'class'   => '',
+                'class'   => 'gBtn--primary',
                 'target'  => '__blank',
               ),
               array(
                 'label'   => 'Buy',
                 'link'    => '#',
-                'class'   => '',
+                'class'   => 'gBtn--primary',
                 'target'  => '__blank',
               ),
 
@@ -133,12 +138,13 @@
 
 
           array(
-            'icon_title'            => 'images/icons/icon_datablue.png',
-            'label_title'           => 'Online',
-            'icon'                  => 'images/icons/diamante.png',
+            'icon_title'            => '',
+            'label_title'           => '',
+            'icon'                  => 'images/icons/icon6.png',
             'title'                 => 'Diamante',
             'description'           => 'Versão com recursos avançados para gestão de sua empresa',
             'alt'                   => 'Diamante',
+            'monthly'               => true,
             'price'                 => 3499,
             'price_promotional'     => 2999,
             'qty_installments'      => 10,
@@ -147,13 +153,13 @@
               array(
                 'label'   => 'Test',
                 'link'    => '#',
-                'class'   => '',
+                'class'   => 'gBtn--primary',
                 'target'  => '__blank',
               ),
               array(
                 'label'   => 'Buy',
                 'link'    => '#',
-                'class'   => '',
+                'class'   => 'gBtn--primary',
                 'target'  => '__blank',
               ),
 

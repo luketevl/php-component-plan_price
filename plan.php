@@ -1,9 +1,16 @@
 <article class="mPlan">
   <header class="mPlan__header">
-    <img src="<?= $plan['icon_title']?>" alt="<?= $plan['alt']?>">
-    <strong class="mPlan__titleHeader   <?= $plan['feature']? 'gColor--primary' : '' ?>">
-      <?= $plan['label_title']?>
-    </strong>
+    <?php 
+    if(!empty($plan['icon_title'])){ ?>
+      <img src="<?= $plan['icon_title']?>" alt="<?= $plan['alt']?>">
+    <?php 
+    }
+
+    if(!empty($plan['label_title'])){ ?>
+      <strong class="mPlan__titleHeader  <?= $plan['feature']? 'gColor--primary' : '' ?>">
+        <?= $plan['label_title']?>
+      </strong>
+    <?php } ?>
   </header>
 
   <div class="mPlan__system <?= $plan['feature']? 'mPlan__system--state mPlan__system--state-primary' : '' ?>">
@@ -27,12 +34,33 @@
       <span class="text-center"><s class="mPlan__original gColor--danger">De R$ <?= number_format($plan['price'], 2, ',', '.') ?></s> por</span>
       <div class="mPlan__promotion">
         <div class="mPlan__installments">
-          <span class="mPlan__span"><?= $plan['qty_installments']?>X</span>
+          <?php if(!$plan['monthly']){ ?>
+            <span class="mPlan__span"><?= $plan['qty_installments']?>X</span>
+
+           <?php } ?>
           <span class="mPlan__span">R$</span>
         </div>
-        <span class="mPlan__pricePromotional"><?= number_format(($plan['price_promotional'] / $plan['qty_installments']), 2, ',', '.') ?></span>
+        <?php if($plan['monthly']){ ?> 
+        <span class="mPlan__monthly">
+        <?php } ?>
+        <span class="mPlan__pricePromotional">
+          <?php if(!$plan['monthly']){ ?>
+          <?= number_format(($plan['price_promotional'] / $plan['qty_installments']), 2, ',', '.') ?>
+          <?php }
+          else{
+            echo $plan['price_promotional'];
+          } ?>
+          </span>
+          <?php 
+          if($plan['monthly']){ ?>
+            <span class="mPlan__span mPlan__pearMonthly">por mês</span>
+            </span> 
+          <?php } ?>
       </div>
+      
+      <?php if($plan['porcent_discount'] > 0){ ?>
        <small class="col-md-12 text-center mPlan__phrase">Ou à vista no boleto com <?= $plan['porcent_discount']?>% de desconto</small>
+       <?php } ?>
     </div>
 
     <ul class="col-md-12  mPlan__list">
@@ -52,7 +80,7 @@
     <footer class="mPlan__footer col-md-12">
       <?php 
       foreach ($plan['actions'] as $action) { ?>
-        <a href="<?= $plan['url']?>" class="<?= $plan['class']?>" target="<?= $plan['target']?>">Testar</a>  
+        <a href="<?= $plan['url']?>" class="btn mPlan__btn <?= $action['class']?>" target="<?= $action['target']?>"><?= $action['label']?></a>  
      <?php }
       ?>
     </footer>
