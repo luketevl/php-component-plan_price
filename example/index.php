@@ -39,13 +39,13 @@
              'actions'               => array(
               array(
                 'label'   => 'Test',
-                'link'    => '#',
+                'url'    => '#',
                 'class'   => 'gBtn--primary',
                 'target'  => '__blank',
               ),
               array(
                 'label'   => 'Buy',
-                'link'    => '#',
+                'url'    => '#',
                 'class'   => 'gBtn--primary',
                 'target'  => '__blank',
               ),
@@ -77,13 +77,13 @@
              'actions'               => array(
               array(
                 'label'   => 'Test',
-                'link'    => '#',
+                'url'    => '#',
                 'class'   => 'gBtn--primary',
                 'target'  => '__blank',
               ),
               array(
                 'label'   => 'Buy',
-                'link'    => '#',
+                'url'    => '#',
                 'class'   => 'gBtn--primary',
                 'target'  => '__blank',
               ),
@@ -114,13 +114,13 @@
              'actions'               => array(
               array(
                 'label'   => 'Test',
-                'link'    => '#',
+                'url'    => '#',
                 'class'   => 'gBtn--primary',
                 'target'  => '__blank',
               ),
               array(
                 'label'   => 'Buy',
-                'link'    => '#',
+                'url'    => '#',
                 'class'   => 'gBtn--primary',
                 'target'  => '__blank',
               ),
@@ -152,13 +152,13 @@
              'actions'               => array(
               array(
                 'label'   => 'Test',
-                'link'    => '#',
+                'url'    => '#',
                 'class'   => 'gBtn--primary',
                 'target'  => '__blank',
               ),
               array(
                 'label'   => 'Buy',
-                'link'    => '#',
+                'url'    => '#',
                 'class'   => 'gBtn--primary',
                 'target'  => '__blank',
               ),
