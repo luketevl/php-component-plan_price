@@ -31,7 +31,11 @@
     </div>
 
     <div class="col-md-12 mPlan__price">
+    <?php 
+    if($plan['price'] > 0){?>
       <span class="text-center"><s class="mPlan__original gColor--danger">De R$ <?= number_format($plan['price'], 2, ',', '.') ?></s> por</span>
+
+    <?php }?>
       <div class="mPlan__promotion">
         <div class="mPlan__installments">
           <?php if(!$plan['monthly']){ ?>
