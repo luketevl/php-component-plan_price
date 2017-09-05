@@ -1,0 +1,7 @@
+{
+    "name": "luketevl/price-plan",
+    "description": "Component show plans and prices",
+    "require": {
+        "php": ">=5.6"
+    }
+}
