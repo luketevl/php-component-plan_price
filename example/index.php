@@ -38,6 +38,9 @@
             'porcent_discount'      => $constPorcentagemDesconto,
              'actions'               => array(
               array(
+                'attrs' => array(
+                  array('name' => 'id', 'value' => time())
+                ),
                 'label'   => 'Test',
                 'url'    => '#',
                 'class'   => 'gBtn--primary',
