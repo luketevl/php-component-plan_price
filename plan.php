@@ -86,8 +86,10 @@
       foreach ($plan['actions'] as $action) { ?>
         <a href="<?= $action['url']?>" 
         <?php
-        foreach ($action['attrs'] as $attr) {
-          echo " ". $attr['name']."=".$attr['value'];
+        if(isset($action['attrs'])){
+          foreach ($action['attrs'] as $attr) {
+            echo " ". $attr['name']."=".$attr['value'];
+          }
         } ?>
         class="btn mPlan__btn <?= $action['class']?>" target="<?= $action['target']?>"><?= $action['label']?></a>  
      <?php }
